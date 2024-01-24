@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.btn{
+  margin-top: 30px;
+  border-radius: 8px;
+  background: #FF5400;
+  color: #FFF;
+text-align: center;
+font-family: "Mulish", sans-serif;
+font-size: 20px;
+font-weight: 800;
+border: none;
+padding: 13px 30px;
+margin-left: 40px;
+}
+
+/* Navbar start */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.2rem;
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin: 0px auto;
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+}
+.sub-container {
+  /* border: 2px solid red; */
+  min-width: 20px;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  gap: 0.6rem;
+}
+.sub-container h3 {
+  color: #131318;
+  font-family: "Mulish", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+}
+.sub-container span {
+  color: #ff5400;
+}
+.navbar {
+  /* border: 2px solid red; */
+  display: inline-flex;
+  width: 50%;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 2.75rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: #424247;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.navbar .home-color {
+  color: #ff5400;
+}
+.menu-cdn {
+  display: none;
+}
+/* navbar end */
+
+/* Banner Start */
+.banner {
+  height: auto;
+  /* width: 800px; */
+  position: relative;
+  margin-bottom: 100px;
+}
+.banner .banner-img img {
+  /* max-width: 1090px; */
+  display: block;
+  margin: 0px auto;
+  object-fit: cover;
+}
+.banner .banner-text {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner-text h3 {
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+.banner-text p {
+  color: #fff;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.banner-text .inner-banner-text {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  display: inline-flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 24px;
+}
+.banner-text input {
+  text-align: center;
+  width: 130px;
+  height: 40px;
+  padding: 6px;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+}
+#btn {
+  background: #ff5400;
+  color: #fff;
+
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Content start */
+.content{
+  display: flex;
+  justify-content: center;
+}
+.content1 h3{
+  color: #131318;
+  font-family: "Mulish", sans-serif;
+font-size: 40px;
+font-weight: 800;
+text-align: start;
+padding: 10px;
+margin-left: 30px;
+}
+.content1 p,ul{
+  color: rgba(19, 19, 24, 0.70);
+  font-family: "Mulish", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px; 
+padding: 10px;
+text-align:start;
+margin-left: 30px;
+}
+.content1 ul > li{
+margin-left: 30px;
+}
+.content2{
+  width: 100%;
+  margin-left: 100px;
+}
+
+
+
+@media (min-width: 350px) and (max-width: 600px) {
+  .sub-container {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+  }
+  .sub-container h3 {
+    font-size: 1.5rem;
+  }
+  .navbar {
+    display: none;
+  }
+  .menu-cdn {
+    display: block;
+    display: visible;
+  }
+  .menu-cdn i {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    margin-right: 40px;
+  }
+  /* Banner Start */
+  .banner .banner-img {
+    margin-left: 5px;
+    /* width: 30%;
+    height: 600px; */
+    border-radius: 30px;
+  }
+  /* .banner-img img {
+    width: 90%;
+    height: 600px;
+    border-radius: 30px;
+  } */
+  .banner-text h3 {
+    font-size: 1.7rem;
+    margin-left: 15px;
+  }
+  .banner-text .p-title > p {
+    font-size: 1.1rem;
+  }
+  .inner-banner-text {
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+  .banner-text input {
+    width: 230px;
+    height: 40px;
+  }
+  /* content */
+  .content{
+    flex-direction: column;
+  }
+  .content1{
+    margin-bottom: 30px;
+  }
+  .content1 > h3{
+    font-size: 30px;
+    margin-top: -50px;
+  }
+  .content2 > img{
+    width: 80%;
+    margin-left: -50px;
+  }
+}
+
+
+
